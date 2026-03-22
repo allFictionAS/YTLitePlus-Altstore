@@ -1,9 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/YTLitePlus/Assets/main/Altstore/Github_banner.png" alt="YTLitePlus Banner" />
+  <img src="" alt="Monochrome Banner" />
 </p>
 
-[![Platform](http://img.shields.io/badge/platform-iOS/iPadOS/macOS-black.svg)](https://developer.apple.com/iphone/index.action)
-![GitHub issues](https://img.shields.io/github/issues-raw/YTLitePlus/YTLitePlus-Altstore?color=black&)
+None of the buttons work, they are just placeholders for the time being.
 
 <a href="https://tinyurl.com/YTLiteAltstore"><img src="https://raw.githubusercontent.com/YTLitePlus/Assets/main/Github/Buttons/Altstore/Altstore.png" width="200"></a>
 &nbsp;
@@ -12,10 +11,11 @@
 &nbsp;
 <a href="https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"><img src="https://raw.githubusercontent.com/YTLitePlus/Assets/main/Github/Buttons/Altstore/URL.png" width="200"></a>
 
-# Website 
-<a href="https://ytliteplus.github.io/"><img src="https://raw.githubusercontent.com/YTLitePlus/Assets/main/Github/Buttons/Website.png" width="200"></a>
+# Website
+
+<a href="https://app.monochrome.tf"><img src="https://raw.githubusercontent.com/YTLitePlus/Assets/main/Github/Buttons/Website.png" width="200"></a>
 &nbsp;
 
 # Project repo
-https://github.com/YTLitePlus/YTLitePlus
+https://github.com/monochrome-music/monochrome
 
