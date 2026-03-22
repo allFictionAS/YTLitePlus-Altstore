@@ -33,10 +33,10 @@ def update_json_file(json_file, download_url, ytliteplus_version, version):
 
     full_version = version.lstrip('v')
     tag = version
-    version = re.search(r"(\d+\.\d+\.\d+)", full_version).group(1)
+    version = re.search(r"(\d+\.\d+)", full_version).group(1)
     version_date = date_obj.strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    description = f"Current YouTube IPA: {version}\r\nCurrent YTLite Version: {ytliteplus_version}"
+    description = f"Current Monochrome IPA: {version}"
 
     version_entry = {
         "version": version,
@@ -66,15 +66,15 @@ def update_json_file(json_file, download_url, ytliteplus_version, version):
     news_identifier = f"release-{full_version}"
     date_string = date_obj.strftime("%d/%m/%y")
     news_entry = {
-        "appID": "com.google.ios.youtube",
+        "appID": "com.monochrome-music.monochrome",
         "caption": f"Update of YTLitePlus just got released!",
         "date": version_date,
         "identifier": news_identifier,
-        "imageURL": "https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/screenshots/news/new_release.png",
+        "imageURL": "",
         "notify": True,
         "tintColor": "000000",
-        "title": f"{full_version} - YTLitePlus  {date_string}",
-        "url": f"https://github.com/Balackburn/YTLitePlus/releases/tag/{tag}"
+        "title": f"{full_version} - Monochrome  {date_string}",
+        "url": f"https://discord.com/channels/1457628745589456910/1475484171253186741/1484899305356529966"
     }
 
     news_entry_exists = any(item["identifier"] == news_identifier for item in data["news"])
@@ -91,15 +91,15 @@ def update_json_file(json_file, download_url, ytliteplus_version, version):
 
 def main():
     if len(sys.argv) < 4:
-        raise TypeError(f"Not enough arguments:\n{os.path.basename(__file__)} <download_url> <yt_version> <ytliteplus_version>")
+        raise TypeError(f"Not enough arguments:\n{os.path.basename(__file__)} <download_url> <m_version> <ytliteplus_version>")
     download_url = sys.argv[1]
     ytliteplus_version = sys.argv[2]
-    yt_version = sys.argv[3]
+    m_version = sys.argv[3]
 
     json_file = "apps.json"
 
     try:
-        update_json_file(json_file, download_url, ytliteplus_version, yt_version)
+        update_json_file(json_file, download_url, ytliteplus_version, m_version)
     except Exception as e:
         print(f"An error occurred: {e}")
         raise
